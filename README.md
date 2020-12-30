@@ -51,7 +51,12 @@ class EndPoint extends API{
     }
 
     protected function example(){
-        return array("endPoint"=>$this->endpoint,"verb"=>$this->verb,"args"=>$this->args,"request"=>$this->request);
+        return array(
+          "endPoint"=>$this->endpoint,
+          "verb"=>$this->verb,
+          "args"=>$this->args,
+          "request"=>$this->request
+          );
     }
 }
 
@@ -74,10 +79,11 @@ try{
 ```
 
 ### Sample Call
-
+#### Call
 ```
 curl http://localhost/example/3/value2/value4
 ```
+#### Response
 ```
 {
     "endPoint": "example",
